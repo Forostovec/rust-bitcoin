@@ -1212,7 +1212,7 @@ fn num_op_result_ops() {
         let _ = sres - ssat;
         // let _ = sres / ssat;
 
-        // Operations that where both sides are the result of another operation.
+        // Operations where both sides are the result of another operation.
         let _ = res + res;
         let _ = res - res;
         // let _ = res / res;
