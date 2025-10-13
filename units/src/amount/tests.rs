@@ -1329,7 +1329,7 @@ fn signed_amount_div_nonzero() {
     let divisor = NonZeroI64::new(4).unwrap();
     let result = signed / divisor;
     assert_eq!(result, SignedAmount::from_sat(-25).unwrap());
-    //checking also for &T/U, T/&Uvariant
+    //checking also for &T/U, T/&U variant
     assert_eq!(&signed / divisor, SignedAmount::from_sat(-25).unwrap());
     assert_eq!(signed / &divisor, SignedAmount::from_sat(-25).unwrap());
 }
